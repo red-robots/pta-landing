@@ -125,11 +125,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a54d73', end
 	}
 	h2 {
 		padding: 20px 0;
-		width: 60%;
+		width: 100%;
 		margin: 20px auto;
 		font: {
 			size: 28px;
 			weight: normal;
+		}
+		@media screen and (min-width: $tabwidth) {
+			width: 60%;
 		}
 	}
 	p.ayr {
@@ -171,12 +174,20 @@ section.second {
 	.wrapper {
 		display: flex;
 			flex-direction: row;
-			flex-wrap: nowrap;
+			flex-wrap: wrap;
 			justify-content: space-around;
 			align-items: stretch;
+			@media screen and (min-width: $tabwidth) {
+				flex-wrap: nowrap;
+			}
 	}
 	.icon {
 		color: $color-pink;
+		flex-basis: 100%;
+		text-align: center;
+		@media screen and (min-width: $tabwidth) {
+			flex-basis: 30%;
+		}
 	}
 	.description {
 		flex-basis: 100%;
@@ -216,6 +227,7 @@ section.what-you-get {
 		background-color: #fff;
 		text-align: center;
 		padding: 3%;
+		margin: 0 0 30px 0;
 
 		@media screen and (min-width: $tabwidth) {
 			flex-basis: 45%;
@@ -271,7 +283,7 @@ section.pricing {
 		color: $color-black;
 	}
 	.card {
-		width: 60%;
+		width: 90%;
 		margin: 0 auto;
 		background-color: #fff;
 		text-align: center;
@@ -282,7 +294,7 @@ section.pricing {
 box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.33);
 
 		@media screen and (min-width: $tabwidth) {
-		
+			width: 60%;
 		}
 		@media screen and (min-width: $deskwidth) {
 			
