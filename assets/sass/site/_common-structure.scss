@@ -1,0 +1,380 @@
+* { -webkit-hyphens: none; }
+div {
+
+
+	/* Adds a hyphen where the word breaks, if supported (No Blink) */
+	-ms-hyphens: auto;
+	-moz-hyphens: auto;
+	-webkit-hyphens: auto;
+	hyphens: auto;
+}
+.clear {clear: both;}
+.wrapper {
+	width: 100%;
+	margin: 0px auto;
+	padding: 20px;
+	
+	@media screen and (min-width: $tabwidth) {
+		width: 100%;
+	}
+	@media screen and (min-width: $deskwidth) {
+		width:90%;
+		padding: 0px;
+	}
+}
+
+.content-area {
+	width: 100%;
+	margin: 0px auto;
+	
+	@media screen and (min-width: $tabwidth) {
+		width: 66%;
+		float: left;
+		margin: 0;
+	}
+	@media screen and (min-width: $deskwidth) {
+		/*width: 1200px;*/
+	}
+}
+
+.widget-area {
+	width: 100%;
+	margin: 0px auto;
+	
+	@media screen and (min-width: $tabwidth) {
+		width: 26%;
+		float: right;
+		margin: 0;
+	}
+	@media screen and (min-width: $deskwidth) {
+		/*width: 1200px;*/
+	}
+}
+
+/* Logo */
+.logo , h1.logo {
+	width: 300px;
+	height: 200px;
+	background-image: url(images/logo.png);	
+	margin: 10px auto;
+
+	@media screen and (min-width: $tabwidth) {
+		width: 300px;
+		height: 200px;
+		float: left;
+		margin: 0;
+	}
+	@media screen and (min-width: $deskwidth) {
+		/*width: 1200px;*/
+	}
+}
+.logo a, h1.logo a {
+	width: 300px;
+	height: 200px;
+	display: block;
+	text-indent: -9000px;
+
+	@media screen and (min-width: $tabwidth) {
+		width: 300px;
+		height: 200px;
+	}
+	@media screen and (min-width: $deskwidth) {
+		/*width: 1200px;*/
+	}
+}
+section.hero {
+	width: 100%;
+	color: #fff;
+	padding: 80px 0;
+	text-align: center;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#a54d73+0,e3a66f+100&1+0,0+100 */
+background: -moz-linear-gradient(-135deg, rgba(165,77,115,1) 0%, rgba(227,166,111,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-135deg, rgba(165,77,115,1) 0%,rgba(227,166,111,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(45deg, rgba(165,77,115,1) 0%,rgba(227,166,111,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a54d73', endColorstr='#00e3a66f',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	
+
+	@media screen and (min-width: $tabwidth) {
+		
+	}
+	@media screen and (min-width: $deskwidth) {
+		
+	}
+	h1 {
+		width: auto;
+		position: relative;
+		padding: 30px 0;
+		font: {
+			family: $font-heading;
+			size: 40px;
+		}
+		@media screen and (min-width: $tabwidth) {
+			font-size: 40px;
+		}
+		@media screen and (min-width: $deskwidth) {
+			font-size: 60px;
+		}
+		&:after {
+			content: '';
+			border-bottom: 5px solid #fff;
+			position: absolute;
+			left: 40%;
+			bottom: 10px;
+			width: 20%;
+		}
+	}
+	h2 {
+		padding: 20px 0;
+		width: 60%;
+		margin: 20px auto;
+		font: {
+			size: 28px;
+			weight: normal;
+		}
+	}
+	p.ayr {
+		font: {
+			family: $font-heading;
+			size: 30px;
+			weight: bold;
+		}
+		margin: 0 0 20px 0;
+	}
+}
+section.section {
+	padding: 100px 0;
+	h2 {
+		font: {
+			size: 40px;
+			family: $font-heading;
+		}
+		width: 100%;
+		text-align: center;
+		@media screen and (min-width: $tabwidth) {
+		
+		}
+		@media screen and (min-width: $deskwidth) {
+			
+		}
+	}
+	
+}
+section.second {
+	width: 100%;
+	background-color: #fff;
+	@media screen and (min-width: $tabwidth) {
+		
+	}
+	@media screen and (min-width: $deskwidth) {
+		
+	}
+	.wrapper {
+		display: flex;
+			flex-direction: row;
+			flex-wrap: nowrap;
+			justify-content: space-around;
+			align-items: stretch;
+	}
+	.icon {
+		color: $color-pink;
+	}
+	.description {
+		flex-basis: 100%;
+		font: {
+			family: $font-copy;
+			size: 26px;
+		}
+		@media screen and (min-width: $tabwidth) {
+			flex-basis: 60%;
+		}
+		@media screen and (min-width: $deskwidth) {
+			
+		}
+	}
+}
+section.what-you-get {
+	width: 100%;
+	background-color: $color-green;
+	h2 {
+		margin: 0 0 50px 0;
+	}
+	@media screen and (min-width: $tabwidth) {
+		
+	}
+	@media screen and (min-width: $deskwidth) {
+		
+	}
+	.flexwrap {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: stretch;
+		justify-content: space-around;
+	}
+	.card {
+		flex-basis: 90%;
+		background-color: #fff;
+		text-align: center;
+		padding: 3%;
+
+		@media screen and (min-width: $tabwidth) {
+			flex-basis: 45%;
+		}
+		@media screen and (min-width: $deskwidth) {
+			
+		}
+	}
+	.icon {
+		color: $color-pink;
+	}
+	.desc {
+		width: 100%;
+		
+		font: {
+			family: $font-copy;
+			size: 20px;
+		}
+		
+		ul {
+			list-style-type: none;
+			padding: 0;
+			margin: 0 0 20px 0;
+		}
+		li {
+			border-bottom: 1px solid #ccc;
+			font-size: 22px;
+		}
+		p {
+			margin: 0 0 25px 0;
+			text-align: left;
+		}
+	}
+	h3 {
+		margin: 0 0 40px 0;
+		color: $color-black;
+		font: {
+			family: $font-heading;
+			size: 26px;
+		}
+	}
+}
+section.pricing {
+	width: 100%;
+	@media screen and (min-width: $tabwidth) {
+		
+	}
+	@media screen and (min-width: $deskwidth) {
+		
+	}
+	h2 {
+		margin: 0 0 50px 0;
+		color: $color-black;
+	}
+	.card {
+		width: 60%;
+		margin: 0 auto;
+		background-color: #fff;
+		text-align: center;
+		padding: 3%;
+		font-size: 30px;
+		-webkit-box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.33);
+-moz-box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.33);
+box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.33);
+
+		@media screen and (min-width: $tabwidth) {
+		
+		}
+		@media screen and (min-width: $deskwidth) {
+			
+		}
+	}
+	p {
+		margin: 0 0 30px 0;
+	}
+	.disclaimer {
+		font-size: 16px;
+		padding: 10px;
+		border-top: 1px solid #ccc;
+		border-bottom: 1px solid #ccc;
+	}
+}
+section.signup {
+	width: 100%;
+	color: #fff;
+	background: -moz-linear-gradient(-135deg, rgba(165,77,115,1) 0%, rgba(227,166,111,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-135deg, rgba(165,77,115,1) 0%,rgba(227,166,111,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(45deg, rgba(165,77,115,1) 0%,rgba(227,166,111,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a54d73', endColorstr='#00e3a66f',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+	@media screen and (min-width: $tabwidth) {
+		
+	}
+	@media screen and (min-width: $deskwidth) {
+		
+	}
+	.wrapper {
+		@media screen and (min-width: $deskwidth) {
+			width: 50%;
+		}
+	}
+	h2 {
+		margin: 0 0 50px 0;
+		color: #fff;
+	}
+	.card {
+		width: 60%;
+		margin: 0 auto;
+		background-color: #fff;
+		text-align: center;
+		padding: 3%;
+		font-size: 30px;
+
+		@media screen and (min-width: $tabwidth) {
+		
+		}
+		@media screen and (min-width: $deskwidth) {
+			
+		}
+	}
+	p {
+		margin: 0 0 30px 0;
+	}
+	.disclaimer {
+		font-size: 16px;
+		padding: 10px;
+		border-top: 1px solid #ccc;
+		border-bottom: 1px solid #ccc;
+	}
+}
+.button {
+	width: auto;
+	display: inline-block;
+
+	@media screen and (min-width: $tabwidth) {
+		
+	}
+	@media screen and (min-width: $deskwidth) {
+		
+	}
+	a {
+		color: $color-pink;
+		background-color: #fff;
+		padding: 20px 30px;
+		text-decoration: none;
+		transform: scale(1);
+		display: block;
+		@include transition(all .2s ease);
+		&:hover {
+			transform: scale(1.2);
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
